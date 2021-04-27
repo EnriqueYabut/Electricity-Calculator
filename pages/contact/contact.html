@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+        Electricity Cost Calculator App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<img src>
+<ion-content padding>
+  
+   
+<ion-content>
+  
+  <ion-list>
+  
+    <ion-item>
+      <ion-label> Power Consumption[wattage]</ion-label>
+      <ion-input type="number" [(ngModel)]="PC"> </ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+  <ion-label> Hours of Use </ion-label>
+  <ion-input type="number" [(ngModel)]="HOU"> </ion-input>
+</ion-item>
+
+<br>
+
+<ion-item>
+  <ion-label> Cost [per kWH]</ion-label>
+  <ion-input type="number" [(ngModel)]="CO"> </ion-input>
+</ion-item>
+
+<button ion-button color="Primary" (click)="compute()"> Compute </button>
+
+<br>
+<br>
+<br>
+<br>
+
+<ion-item> 
+  <h3> Energy Consumed per day (kHw) {{ED}} </h3>
+</ion-item>
+
+<br>
+<ion-item> 
+  <h3> Electricity cost per day  {{ECPD}} </h3>
+</ion-item>
+
+
+
+
+     
+     
+  </ion-list>
+</ion-content>
